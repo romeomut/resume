@@ -1,0 +1,119 @@
+<div>
+    <main>
+        <section>                                                                     
+
+            <div>
+
+                {{> title data='Languages'big=true}}
+
+                {{#with web}}
+
+                    {{#each languages}}
+
+                        <b>{{name}}</b><br>
+
+                        <b>version:</b> {{version}} <br>
+                        <b>description:</b> {{description}} <br>
+
+                        {{!-- elements --}}
+
+                        {{#if elements}}
+
+                            {{> title data='Elements'}}
+                            <ul>
+                            {{#each elements}}
+
+                                <li>
+                                {{name}}
+                                <small>({{description}})</small>
+                                </li>
+
+                                    <b><small>Attributes</small></b>
+
+                                    <ul>
+                                    {{#each attributes}}
+
+                                        <li>
+                                        {{name}}
+                                        <small>({{description}})</small>
+                                        </li>
+
+                                    {{/each}}
+                                    </ul>
+
+                            {{/each}}
+                            </ul>
+                        {{/if}}
+
+                        {{!-- properties --}}
+                        {{#if properties}}
+
+                            {{> title data='Properties'}}
+                            <ul>
+                            {{#each properties}}
+
+                                <li>
+                                {{name}}
+                                <small>({{description}})</small>
+                                </li>
+
+                                    <b><small>Values</small></b>
+
+                                    <ul>
+                                    {{#each values}}
+
+                                        <li>
+                                        {{value}}
+                                        <small>({{description}})</small>
+                                        </li>
+
+                                    {{/each}}
+                                    </ul>
+
+                            {{/each}}
+                            </ul>
+
+                        {{/if}}
+
+                        {{!-- functions --}}
+                        {{#if functions}}
+                            
+                            {{> title data='Functions'}}
+                            <ul>
+                            {{#each functions}}
+
+                                <li>
+                                {{name}}
+                                <small>({{description}})</small>
+                                </li>
+
+                                    <b><small>Parameters</small></b>
+
+                                    <ul>
+                                    {{#each parameters}}
+
+                                        <li>
+                                        {{name}}, type: {{type}}
+                                        <small>({{description}})</small>
+                                        </li>
+
+                                    {{/each}}
+                                    </ul>
+
+                            {{/each}}
+                            </ul>                            
+
+                        {{/if}}
+
+                        <hr>
+                        
+
+                    {{/each}}
+
+                {{/with}}
+
+            </div>  
+
+        </section>
+    </main>
+</div>
