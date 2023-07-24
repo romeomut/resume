@@ -1,0 +1,9 @@
+<div>    
+        {{> title data=titlelist}}
+
+        <ul class="list-group">
+            {{#each arr}}
+                <li class="list-group-item"><b>name: </b>{{name}}, <b>type: </b>{{type}}</li>
+            {{/each}}
+        </ul>
+</div>

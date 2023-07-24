@@ -1,0 +1,51 @@
+<div>
+    <main>
+        <section>
+
+            <div>
+
+                <div class="card">
+                    <div class="card-body text-bg-primary">           
+                        {{> title data=name big=true}}
+                        {{description}}
+                    </div>
+                </div>
+                {{!-- History --}}
+                {{> title data='History'}}
+
+                <ul class="list-group list-group-numbered">
+                    {{#with history}}
+                        <li class="list-group-item"><b>year:</b> {{year}}</li>
+                        <li class="list-group-item"><b>founder:</b> {{founder}}</li>
+                    {{/with}}
+                </ul>
+
+                {{!-- Types --}}
+
+                {{> list_1 titlelist='Types' arr=types}}
+
+                {{!-- Syntax --}}
+
+                {{> title data='Syntax' big=true}}
+
+                {{> list_2 titlelist='variables' arr=syntax.variables}}
+                {{> list_2 titlelist='functions' arr=syntax.functions}}
+                {{> list_2 titlelist='conditionals' arr=syntax.conditionals}}
+                {{> list_2 titlelist='loops' arr=syntax.loops}}
+                {{> list_2 titlelist='Variables' arr=syntax.classes}}
+
+                {{!-- Features --}}
+
+                {{> list_1 titlelist='Features' arr=features}}
+                {{!-- Libraries --}}
+                {{> list_1 titlelist='Libraries' arr=libraries}}
+                {{!-- Tools --}}
+                {{> list_1 titlelist='Tools' arr=tools}}
+                {{!-- Community --}}
+                {{> list_3 titlelist='Community' arr=community}}
+
+            </div>                                                           
+
+        </section>
+    </main>
+</div>
