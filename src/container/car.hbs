@@ -40,18 +40,16 @@
                             {{#each this}}
 
                                 {{#if this.type}}
+                                
                                     <li class="text-primary-emphasis">{{@key}}</li>
-
                                     {{> list_4 data=this}}
 
                                 {{else}}
                                 
-                                <li><b>{{@key}}: </b> {{this}}</li>
-
+                                    <li><b>{{@key}}: </b> {{this}}</li>
                                     {{> list_4 data=this}}
 
                                 {{/if}}
-
 
                             {{/each}}
                             </ul>
@@ -70,14 +68,13 @@
                     {{#each engine}}
 
                         {{#if this.type}}
+                        
                             <li class="text-primary-emphasis">{{@key}}</li>
-
                             {{> list_4 data=this}}
 
-                            {{else}}
+                        {{else}}
                                 
                             <li><b>{{@key}}: </b> {{this}}</li>
-
                             {{> list_4 data=this}}
 
                         {{/if}}
@@ -99,14 +96,13 @@
                     {{#each price}}
 
                         {{#if this.navigation}}
-                            <li class="text-primary-emphasis">{{@key}}</li>
 
+                            <li class="text-primary-emphasis">{{@key}}</li>
                             {{> list_4 data=this}}
 
-                            {{else}}
+                        {{else}}
                                 
                             <li><b>{{@key}}: </b> {{this}}</li>
-
                             {{> list_4 data=this}}
 
                         {{/if}}
@@ -114,7 +110,8 @@
                     {{/each}}
                 </ul>
 
-            </div>                                                                                          
+            </div>   
+
         </section>
     </main>
 </div>

@@ -1,0 +1,131 @@
+<div>
+    <main>
+        <section>
+
+            <div>
+
+                {{> titleBs attr='h2' data=category}}
+
+                <table class="table">
+                    <tbody>
+                        <tr>
+                        <td><b>name</b></td>
+                        <td><b>description</b></td>
+                        <td><b>price</b></td>
+                        <td></td>
+                        </tr>
+                        <tr>
+                        <td>{{name}}</td>
+                        <td>{{description}}</td>
+                        <td>{{price}}</td>
+                        <td><button type="button" class="btn btn-primary">BUY</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>  
+
+            {{!-- 1 --}}
+
+            <div>
+                {{> titleBs attr='h2' data='Features'}}
+                {{> titleBs attr='h5' data='Processor'}}
+                {{> list_4 data=features.processor}}
+            </div>      
+
+            {{!-- 2 --}}
+            
+            <div>
+                {{> titleBs attr='h5' data='Memory'}}
+                {{> list_4 data=features.memory}}
+            </div>   
+
+            {{!-- 3 --}}
+            
+            <div>
+                {{> titleBs attr='h5' data='Storage'}}
+                {{> list_4 data=features.storage}}
+            </div> 
+
+            {{!-- 4 --}}
+            
+            <div>
+                {{> titleBs attr='h5' data='Display'}}
+                {{> list_4 data=features.display}}
+            </div> 
+
+            {{!-- 5 --}}
+            
+            <div>
+                {{> titleBs attr='h5' data='Graphics'}}
+                {{> list_4 data=features.graphics}}
+            </div>   
+
+            {{!-- 6 --}}
+            
+            <div>
+                {{> titleBs attr='h5' data='Ports'}}
+                
+                <ul>
+                    {{#each features.ports}}
+
+                        {{#with this}}
+                            <li><b>type:</b> {{type}}</li>
+                            <li><b>count:</b> {{count}}</li>
+
+                            {{#if features}}
+                                <ul>
+                                     {{#each features}}
+                                        <li>{{this}}</li>
+                                     {{/each}}   
+                                </ul>
+                            {{/if}}
+
+                        {{/with}}
+
+                    {{/each}}
+                </ul>
+            </div>  
+                                         
+            {{!-- 7 --}}
+            
+            <div>
+                {{> titleBs attr='h5' data='Battery'}}
+                {{> list_4 data=features.battery}}
+            </div>  
+
+            {{!-- 8 --}} 
+
+            {{> titleBs attr='h5' data='Weight: 4.3 pounds'}}
+
+            {{!-- 9 --}}
+            
+            <div>
+                {{> titleBs attr='h5' data='Dimensions'}}
+                {{> list_4 data=features.dimensions}}
+            </div>  
+
+            {{!-- 9 --}} 
+
+            {{> titleBs attr='h5' data='Operating system: macOS'}}   
+
+            {{!-- 10 --}} 
+            
+            {{> titleBs attr='h5' data='Accessories'}}
+
+            <table class="table table-striped">
+                <tbody>
+
+                    {{#each features.accessories}}   
+                        <tr>
+                        <td><b>{{name}}</b></td>
+                        <td>{{price}}</td>
+                        </tr>
+                    {{/each}}  
+
+                </tbody>
+            </table>                
+
+        </section>
+    </main>
+</div>
