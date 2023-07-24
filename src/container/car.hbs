@@ -1,0 +1,120 @@
+<div>
+    <main>
+        <section>
+
+            <div>
+
+                <div class="p-1 bg-info bg-opacity-10 border border-info border-start-6">
+                    {{> titleBs attr='h2' data=make}}
+                </div>
+
+               <table class="table">
+                <tbody>
+                    <tr>
+                    <td><b>model</b></td>
+                    <td><b>year</b></td>
+                    <td><b>color</b></td>
+                    </tr>
+                    <tr>
+                    <td>{{model}}</td>
+                    <td>{{year}}</td>
+                    <td>{{color}}</td>
+                    </tr>
+
+                </tbody>
+                </table>
+                
+            </div>   
+            {{!-- 1 --}}
+            <div>
+                {{> titleBs attr='h3' data='features'}}
+
+                {{#each features}}
+                <ul>
+                    <li class="text-primary-emphasis">{{@key}}</li>
+
+                    <ul>
+                        {{#each this}}
+                            <li class="text-primary-emphasis">{{@key}}</li>
+                            <ul>
+                            {{#each this}}
+
+                                {{#if this.type}}
+                                    <li class="text-primary-emphasis">{{@key}}</li>
+
+                                    {{> list_4 data=this}}
+
+                                {{else}}
+                                
+                                <li><b>{{@key}}: </b> {{this}}</li>
+
+                                    {{> list_4 data=this}}
+
+                                {{/if}}
+
+
+                            {{/each}}
+                            </ul>
+                        {{/each}}
+                    </ul>
+                </ul>
+                    
+               {{/each}}
+
+            </div>   
+            {{!-- 2 --}}
+            <div>
+                {{> titleBs attr='h3' data='Engine'}}
+
+                <ul>
+                    {{#each engine}}
+
+                        {{#if this.type}}
+                            <li class="text-primary-emphasis">{{@key}}</li>
+
+                            {{> list_4 data=this}}
+
+                            {{else}}
+                                
+                            <li><b>{{@key}}: </b> {{this}}</li>
+
+                            {{> list_4 data=this}}
+
+                        {{/if}}
+
+                    {{/each}}
+                </ul>
+
+            </div>   
+            {{!-- 3 --}}
+            <div>
+                {{> titleBs attr='h3' data='Fuel economy'}}
+                {{> list_4 data=fuel_economy}}
+            </div>
+            {{!-- 4 --}}
+            <div>
+                {{> titleBs attr='h3' data='Price'}}
+
+                <ul>
+                    {{#each price}}
+
+                        {{#if this.navigation}}
+                            <li class="text-primary-emphasis">{{@key}}</li>
+
+                            {{> list_4 data=this}}
+
+                            {{else}}
+                                
+                            <li><b>{{@key}}: </b> {{this}}</li>
+
+                            {{> list_4 data=this}}
+
+                        {{/if}}
+                        
+                    {{/each}}
+                </ul>
+
+            </div>                                                                                          
+        </section>
+    </main>
+</div>
