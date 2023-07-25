@@ -1,0 +1,139 @@
+<div>
+    <main>
+        <section>
+
+            <div>
+
+            {{> titleBs attr='h2' data=name}}
+
+                {{> titleBs attr='h4' data='User'}}
+                <ul>
+                   
+                    {{> list_5 data=users.[0]}}
+                    <div>
+                        <br>
+                        {{> titleBs attr='h4' data='Friend'}}
+                        <ul>
+                            {{> list_5 data=users.[0].friends.[0]}}
+
+                            <div>
+                            <br>
+                                {{> titleBs attr='h4' data='Mutual friends'}}
+                                <ul>
+                                    {{> list_5 data=users.[0].friends.[0].mutual_friends.[0]}}
+                                </ul>
+                            </div>
+                        </ul>
+
+                        {{!--  --}}
+
+                        <br>
+                        {{> titleBs attr='h4' data='Friends'}}
+                        <ul>
+                            {{> list_5 data=users.[0].friends.[1]}}
+
+                            <br>
+                                {{> titleBs attr='h4' data='Mutual friends'}}
+                                <ul>
+                                    {{> list_5 data=users.[0].friends.[1].mutual_friends.[0]}}
+                                </ul>
+                            </div>
+
+                        </ul>
+
+                        {{!-- groups --}}
+                        {{> titleBs attr='h3' data='Group'}}
+
+                        <ul>
+                            {{> list_6 data=users.[0].groups.[0]}}
+
+                            <div>
+                            <br>
+                                {{> titleBs attr='h4' data='Members'}}
+                                <ul>
+                                    {{> list_5 data=users.[0].groups.[0].members.[0]}}
+                                </ul>
+                            </div>
+
+                        </ul> 
+                            {{> titleBs attr='h3' data='Group'}}
+                        <ul>
+                            {{> list_6 data=users.[0].groups.[1]}}
+
+                            <div>
+                            <br>
+                                {{> titleBs attr='h4' data='Members'}}
+                                <ul>
+                                    {{> list_5 data=users.[0].groups.[1].members.[0]}}
+                                    <hr>
+                                    {{> list_5 data=users.[0].groups.[1].members.[1]}}
+                                </ul>
+                            </div>
+
+                        </ul>                         
+
+                    </div>
+
+                </ul>
+
+                {{!--  --}}
+
+                {{> titleBs attr='h4' data='User'}}
+                <ul>
+                    {{> list_5 data=users.[1]}}
+                    <div>
+                    <br>
+                        {{> titleBs attr='h4' data='Friend'}}
+                        <ul>
+                            {{> list_5 data=users.[1].friends.[0]}}
+
+                             <br>
+                                {{> titleBs attr='h4' data='Mutual friends'}}
+                                <ul>
+                                    {{> list_5 data=users.[1].friends.[0].mutual_friends.[0]}}
+                                    <hr>
+                                    {{> list_5 data=users.[1].friends.[0].mutual_friends.[1]}}
+                                    <br>
+                                    {{> titleBs attr='h4' data='Mutual friends'}}
+                                    <ul>
+                                        {{> list_5 data=users.[1].friends.[0].mutual_friends.[1].mutual_friends.[0]}} 
+                                    </ul>
+                                </ul>
+                            </div>
+
+                            {{> titleBs attr='h3' data='Group'}}
+                            <ul>
+                                {{> list_6 data=users.[1].friends.[0].groups.[0]}}
+
+                                <div>
+                                <br>
+                                    {{> titleBs attr='h4' data='Members'}}
+                                    <ul>
+                                        {{> list_5 data=users.[1].friends.[0].groups.[0].members.[0]}}
+                                    </ul>
+                                </div>                               
+                            </ul> 
+                            <br>
+                            {{> titleBs attr='h3' data='Group'}}
+                            <ul>
+                                {{> list_6 data=users.[1].friends.[0].groups.[1]}}
+
+                                <div>
+                                <br>
+                                    {{> titleBs attr='h4' data='Members'}}
+                                    <ul>
+                                        {{> list_5 data=users.[1].friends.[0].groups.[1].members.[0]}}
+                                        <hr>
+                                        {{> list_5 data=users.[1].friends.[0].groups.[1].members.[1]}}
+                                    </ul>
+                                </div>                               
+                            </ul>                             
+
+                        </ul>
+                    </div>
+                </ul>                
+
+            </div>
+        </section>
+    </main>
+</div>
