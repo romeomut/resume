@@ -1,0 +1,31 @@
+{{#each data}}
+
+  <div class='col-3 gx-2 mb-3'>
+    <div
+      class='card'
+      style='background-color: #3d373c; color:#fff;'
+    >
+      <div class='card-header'>
+
+        {{title}}
+
+        {{#if isNew}}
+          <span
+            class='badge text-bg-success rounded-pill'
+          >New</span>
+        {{/if}}
+
+        {{#if isTop}}
+          <span
+            class='badge text-bg-danger rounded-pill'
+          >Top</span>
+        {{/if}}
+
+      </div>
+      <div class='card-body'>
+        {{description}}
+      </div>
+    </div>
+  </div>
+
+{{/each}}
