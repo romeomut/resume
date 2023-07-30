@@ -12,8 +12,7 @@ let header = {
   },
   position: 'Junior Fullstack JS Developer',
   salary: '600$ в місяць',
-  address:
-    'Віницька обл., м. Жмеринка, вул. Набережна, буд. 23',
+  address: 'Віницька обл., м. Жмеринка, вул. Набережна, буд. 23',
 }
 
 let footer = {
@@ -281,8 +280,7 @@ router.get('/person', function (req, res) {
         {
           degree: 'Bachelor of Science',
           major: 'Computer Science',
-          university:
-            'Massachusetts Institute of Technology',
+          university: 'Massachusetts Institute of Technology',
           graduationYear: 2012,
         },
       ],
@@ -306,8 +304,7 @@ router.get('/person', function (req, res) {
               projects: [
                 {
                   name: 'Project Alpha',
-                  description:
-                    'Developing new software platform',
+                  description: 'Developing new software platform',
                   status: 'In Progress',
                   teams: [
                     {
@@ -321,23 +318,17 @@ router.get('/person', function (req, res) {
                         {
                           name: 'Alice Johnson',
                           title: 'Software Engineer',
-                          email:
-                            'alice.johnson@example.com',
+                          email: 'alice.johnson@example.com',
                           skills: ['Java', 'Python', 'SQL'],
                           projects: [
                             {
                               name: 'Project A',
-                              description:
-                                'Lorem ipsum dolor sit amet',
-                              technologies: [
-                                'Java',
-                                'Spring Framework',
-                              ],
+                              description: 'Lorem ipsum dolor sit amet',
+                              technologies: ['Java', 'Spring Framework'],
                               team_members: [
                                 {
                                   name: 'Bob Lee',
-                                  title:
-                                    'Software Engineer',
+                                  title: 'Software Engineer',
                                 },
                                 {
                                   name: 'Cindy Chen',
@@ -369,8 +360,7 @@ router.get('/bio', function (req, res) {
     layout: 'bio',
     name: 'Albert Einstein',
     birthdate: 'March 14, 1879',
-    birthplace:
-      'Ulm, Kingdom of Württemberg, German Empire',
+    birthplace: 'Ulm, Kingdom of Württemberg, German Empire',
     deathdate: 'April 18, 1955',
     deathplace: 'Princeton, New Jersey, United States',
     nationality: 'Swiss, German, American',
@@ -396,8 +386,7 @@ router.get('/bio', function (req, res) {
         publisher: 'Annalen der Physik',
       },
       {
-        title:
-          'Does the Inertia of a Body Depend Upon Its Energy Content?',
+        title: 'Does the Inertia of a Body Depend Upon Its Energy Content?',
         year: 1905,
         publisher: 'Annalen der Physik',
       },
@@ -410,8 +399,7 @@ router.get('/bio', function (req, res) {
       },
       {
         name: 'Elsa Einstein',
-        relationship:
-          "Second wife, also Einstein's first cousin",
+        relationship: "Second wife, also Einstein's first cousin",
         years: '1919-1936',
       },
     ],
@@ -419,15 +407,10 @@ router.get('/bio', function (req, res) {
       {
         title: 'Nobel Prize in Physics',
         year: 1921,
-        description:
-          'Awarded for his explanation of the photoelectric effect',
+        description: 'Awarded for his explanation of the photoelectric effect',
       },
     ],
-    influences: [
-      'Isaac Newton',
-      'James Clerk Maxwell',
-      'Hermann Minkowski',
-    ],
+    influences: ['Isaac Newton', 'James Clerk Maxwell', 'Hermann Minkowski'],
     influenced: [
       'Niels Bohr',
       'Erwin Schrödinger',
@@ -565,8 +548,7 @@ router.get('/web', function (req, res) {
               attributes: [
                 {
                   name: 'id',
-                  description:
-                    'Specifies a unique id for an HTML element.',
+                  description: 'Specifies a unique id for an HTML element.',
                 },
                 {
                   name: 'class',
@@ -577,13 +559,11 @@ router.get('/web', function (req, res) {
             },
             {
               name: 'p',
-              description:
-                'Defines a paragraph in an HTML document.',
+              description: 'Defines a paragraph in an HTML document.',
               attributes: [
                 {
                   name: 'id',
-                  description:
-                    'Specifies a unique id for an HTML element.',
+                  description: 'Specifies a unique id for an HTML element.',
                 },
                 {
                   name: 'class',
@@ -606,30 +586,25 @@ router.get('/web', function (req, res) {
               values: [
                 {
                   value: 'red',
-                  description:
-                    'Sets the text color to red.',
+                  description: 'Sets the text color to red.',
                 },
                 {
                   value: 'blue',
-                  description:
-                    'Sets the text color to blue.',
+                  description: 'Sets the text color to blue.',
                 },
               ],
             },
             {
               name: 'background-color',
-              description:
-                'Sets the background color of an element.',
+              description: 'Sets the background color of an element.',
               values: [
                 {
                   value: 'white',
-                  description:
-                    'Sets the background color to white.',
+                  description: 'Sets the background color to white.',
                 },
                 {
                   value: 'black',
-                  description:
-                    'Sets the background color to black.',
+                  description: 'Sets the background color to black.',
                 },
               ],
             },
@@ -649,21 +624,18 @@ router.get('/web', function (req, res) {
                 {
                   name: 'message',
                   type: 'string',
-                  description:
-                    'The message to display in the alert box.',
+                  description: 'The message to display in the alert box.',
                 },
               ],
             },
             {
               name: 'getElementById()',
-              description:
-                'Returns the element with the specified ID.',
+              description: 'Returns the element with the specified ID.',
               parameters: [
                 {
                   name: 'id',
                   type: 'string',
-                  description:
-                    'The ID of the element to find.',
+                  description: 'The ID of the element to find.',
                 },
               ],
             },
@@ -992,8 +964,7 @@ router.get('/facebook', function (req, res) {
               {
                 id: 4,
                 name: 'Pet Lovers',
-                description:
-                  'A group for people who love their furry friends',
+                description: 'A group for people who love their furry friends',
                 members: [
                   {
                     id: 16,
@@ -1217,8 +1188,7 @@ router.get('/task22', function (req, res) {
         },
         innovation: {
           title: 'Innovation',
-          sub_title:
-            'Forward-thinking approach to programming',
+          sub_title: 'Forward-thinking approach to programming',
           description:
             ' Stay ahead of the curve with our forward-thinking approach to programming...',
           button: 'Show more',
@@ -1374,11 +1344,7 @@ router.get('/task31', function (req, res) {
       cards: [
         {
           name: 'The Mona Lisa',
-          items: [
-            'Painting',
-            'Oil on poplar panel',
-            '1503-1519',
-          ],
+          items: ['Painting', 'Oil on poplar panel', '1503-1519'],
         },
         {
           name: 'The Persistence of Memory',
@@ -1551,8 +1517,7 @@ router.get('/shophome', function (req, res) {
           isNew: true,
         },
         {
-          title:
-            'New Study Shows Benefits of Meditation for Mental Health',
+          title: 'New Study Shows Benefits of Meditation for Mental Health',
           description:
             'A new study published in the Journal of the American Medical Association finds that practicing mindfulness meditation can lead to improved mental health outcomes for people struggling with depression and anxiety.',
           isTop: false,
@@ -1566,24 +1531,21 @@ router.get('/shophome', function (req, res) {
           isNew: true,
         },
         {
-          title:
-            'GameStop Shares Soar as Reddit Traders Rally',
+          title: 'GameStop Shares Soar as Reddit Traders Rally',
           description:
             'Shares of GameStop surge as amateur traders on the social media platform Reddit rally to drive up the price, in what some are calling a battle between Wall Street and Main Street.',
           isTop: false,
           isNew: false,
         },
         {
-          title:
-            'UK Announces Plan to Ban Sale of Gas-Powered Cars by 2030',
+          title: 'UK Announces Plan to Ban Sale of Gas-Powered Cars by 2030',
           description:
             'In an effort to combat climate change, the UK government announces a plan to ban the sale of new gas-powered cars and vans by 2030, with hybrid vehicles to follow in 2035.',
           isTop: true,
           isNew: false,
         },
         {
-          title:
-            'New Study Shows Link Between Exercise and Longevity',
+          title: 'New Study Shows Link Between Exercise and Longevity',
           description:
             'A new study published in the Journal of the American Medical Association suggests that regular exercise can help people live longer, with participants who exercised regularly having a lower risk of premature death.',
           isTop: false,
@@ -1675,8 +1637,7 @@ router.get('/shophome', function (req, res) {
     },
     subscribe: {
       header: 'Unlock Premium Content',
-      description:
-        'Subscribe to access exclusive content and features.',
+      description: 'Subscribe to access exclusive content and features.',
       buttons: [
         {
           text: 'Register Now',
@@ -2016,32 +1977,21 @@ router.get('/shoporder', function (req, res) {
       add: {
         friend: {
           label: 'Запросіть друзів та отримайте ще купонів',
-          placeholder:
-            'Введіть контактні дані друзів через ;',
-          caption:
-            'Напишіть електронні адреси/телефон друзів через “;”',
+          placeholder: 'Введіть контактні дані друзів через ;',
+          caption: 'Напишіть електронні адреси/телефон друзів через “;”',
         },
         colleague: {
           label: 'Запросити колег',
-          placeholder:
-            'Введіть контактні дані колег через ;',
-          caption:
-            'Напишіть електронні адреси/телефон колег через “;”',
+          placeholder: 'Введіть контактні дані колег через ;',
+          caption: 'Напишіть електронні адреси/телефон колег через “;”',
         },
       },
     },
     quiz: {
       title: 'Домоможи краще нам тебе зрозуміти',
       preference: {
-        title:
-          'Який тип обладнання ви зацікавлені в придбанні?',
-        options: [
-          'Смартфони',
-          'Ноутбуки',
-          'Планшети',
-          'ПК',
-          'Телевізори',
-        ],
+        title: 'Який тип обладнання ви зацікавлені в придбанні?',
+        options: ['Смартфони', 'Ноутбуки', 'Планшети', 'ПК', 'Телевізори'],
       },
       your_expirience: {
         label: 'Який у Вас досвід користування ПК',
@@ -2305,8 +2255,7 @@ router.get('/shopcart', function (req, res) {
 
     subscribe: {
       header: 'Unlock Premium Content',
-      description:
-        'Subscribe to access exclusive content and features.',
+      description: 'Subscribe to access exclusive content and features.',
       buttons: [
         {
           text: 'Register Now',
@@ -2317,6 +2266,302 @@ router.get('/shopcart', function (req, res) {
           link: 'https://www.youtube.com/',
         },
       ],
+    },
+
+    footer: [
+      [
+        {
+          text: 'Home',
+          link: 'https://www.youtube.com/',
+        },
+        {
+          text: 'Trending',
+          link: 'https://www.youtube.com/feed/trending',
+        },
+        {
+          text: 'Subscriptions',
+          link: 'https://www.youtube.com/feed/subscriptions',
+        },
+        {
+          text: 'Library',
+          link: 'https://www.youtube.com/feed/library',
+        },
+      ],
+      [
+        {
+          text: 'History',
+          link: 'https://www.youtube.com/feed/history',
+        },
+        {
+          text: 'Your Videos',
+          link: 'https://www.youtube.com/feed/my_videos',
+        },
+        {
+          text: 'Live',
+          link: 'https://www.youtube.com/live',
+        },
+        {
+          text: 'Settings',
+          link: 'https://www.youtube.com/account',
+        },
+      ],
+      [
+        {
+          text: 'Watch Later',
+          link: 'https://www.youtube.com/playlist?list=WL',
+        },
+        {
+          text: 'Liked Videos',
+          link: 'https://www.youtube.com/playlist?list=LL',
+        },
+        {
+          text: 'Music',
+          link: 'https://www.youtube.com/music',
+        },
+        {
+          text: 'Gaming',
+          link: 'https://www.youtube.com/gaming',
+        },
+      ],
+      [
+        {
+          text: 'Sports',
+          link: 'https://www.youtube.com/channel/UCo_q6aOlvPH7M-j_XGWVgXg',
+        },
+        {
+          text: 'News',
+          link: 'https://www.youtube.com/news',
+        },
+        {
+          text: 'Fashion & Beauty',
+          link: 'https://www.youtube.com/channel/UC1x8rV_f-2yPpzlN0JWZXIQ',
+        },
+        {
+          text: 'Learning',
+          link: 'https://www.youtube.com/learning',
+        },
+      ],
+      [
+        {
+          text: 'Report History',
+          link: 'https://www.youtube.com/feed/history/report_history',
+        },
+        {
+          text: 'Help',
+          link: 'https://support.google.com/youtube/?hl=en',
+        },
+        {
+          text: 'Send Feedback',
+          link: 'https://support.google.com/youtube/answer/4347644?hl=en',
+        },
+        {
+          text: 'About',
+          link: 'https://www.youtube.com/about/',
+        },
+      ],
+    ],
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+
+// router.get Створює нам один ентпоїнт
+
+//           ↙ тут вводимо шлях (PATH) до сторінки
+router.get('/shopprofile', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('shopprofile', {
+    layout: 'shop',
+    navigation: {
+      links: [
+        {
+          text: 'Home',
+          href: 'https://github.com/',
+        },
+        {
+          text: 'Contacts',
+          href: 'https://www.google.com/',
+        },
+        {
+          text: 'Help',
+          href: 'https://www.youtube.com/',
+        },
+      ],
+    },
+
+    header: 'Мої замовлення',
+
+    purchase: {
+      tabs: ['Всі замовлення', 'Гарантія та повернення'],
+      actionBlock: {
+        input: { placeholder: 'Placeholder' },
+        buttons: [
+          {
+            text: 'Знайти',
+            link: 'https://www.youtube.com/',
+            isSuccess: true,
+          },
+          {
+            text: 'Виділити все',
+            link: 'https://www.youtube.com/',
+            isOutline: true,
+          },
+          {
+            text: 'Очистити все',
+            link: 'https://www.youtube.com/',
+            isDanger: true,
+          },
+        ],
+      },
+      itemList: [
+        {
+          number: '№12587463 від 01.01.2023',
+          status: 'Виконано',
+          amount: { title: 'Сума', value: '25 000 ₴' },
+          images: ['https://picsum.photos/110/100'],
+          button: {
+            text: 'Детальніше',
+            link: 'https://www.youtube.com/',
+            isPrimary: true,
+          },
+        },
+        {
+          number: '№12587463 від 01.01.2023',
+          status: 'Виконано',
+          amount: { title: 'Сума', value: '25 000 ₴' },
+          images: [
+            'https://picsum.photos/110/100',
+            'https://picsum.photos/110/100',
+            'https://picsum.photos/110/100',
+          ],
+          button: {
+            text: 'Детальніше',
+            link: 'https://www.youtube.com/',
+            isPrimary: true,
+          },
+        },
+        {
+          number: '№12587463 від 01.01.2023',
+          status: 'Виконано',
+          amount: { title: 'Сума', value: '25 000 ₴' },
+          images: [
+            'https://picsum.photos/110/100',
+            'https://picsum.photos/110/100',
+          ],
+          button: {
+            text: 'Детальніше',
+            link: 'https://www.youtube.com/',
+            isPrimary: true,
+          },
+        },
+      ],
+    },
+    userInfo: {
+      title: 'Особиста інформація',
+      profileData: {
+        title: 'Особисті дані',
+        fullName: {
+          surname: {
+            title: 'Прізвище',
+            value: 'Іванов',
+          },
+          name: {
+            title: 'Ім’я',
+            value: 'Іван',
+          },
+          middleName: {
+            title: 'По-батькові',
+            value: 'Іванович',
+          },
+        },
+        otherInfo: {
+          birthday: {
+            title: 'Дата народження',
+            value: '01.01.2000',
+          },
+          sex: {
+            title: 'Стать',
+            value: 'Чоловіча',
+          },
+          language: {
+            title: 'Мова',
+            value: 'Українська',
+          },
+        },
+      },
+      buttons: [
+        {
+          text: 'Редагувати',
+          link: 'https://www.youtube.com/',
+          isPrimary: true,
+        },
+        {
+          text: 'Очистити',
+          link: 'https://www.youtube.com/',
+          isSecondary: true,
+        },
+        {
+          text: 'Видалити',
+          link: 'https://www.youtube.com/',
+          isDanger: true,
+        },
+      ],
+      recipients: {
+        title: 'Отримувачі',
+        users: [
+          {
+            name: 'Іванов Іван Іванович',
+            phone: '+38 (098) 222 22 22',
+            button: {
+              text: 'Редагувати',
+              link: 'https://www.youtube.com/',
+            },
+          },
+          {
+            name: 'Петров Петро Петрович',
+            phone: '+38 (098) 111 11 11',
+            button: {
+              text: 'Редагувати',
+              link: 'https://www.youtube.com/',
+            },
+          },
+        ],
+      },
+      contacts: {
+        title: 'Контакти',
+        contactData: [
+          {
+            title: 'Номер телефону',
+            value: '+38 (098) 222 22 22',
+            button: {
+              text: 'Редагувати',
+              link: 'https://www.youtube.com/',
+              isPrimary: true,
+            },
+          },
+          {
+            title: 'Додатковий номер телефону',
+            value: '+38 (098) 111 11 11',
+            button: {
+              text: 'Очистити',
+              link: 'https://www.youtube.com/',
+              isSecondary: true,
+            },
+          },
+          {
+            title: 'Електронна адреса',
+            value: 'ivanivanov@ukr.net',
+            button: {
+              text: 'Видалити',
+              link: 'https://www.youtube.com/',
+              isDanger: true,
+            },
+          },
+        ],
+      },
     },
 
     footer: [

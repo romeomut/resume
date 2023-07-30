@@ -1,0 +1,36 @@
+{{#each data}}
+
+  <div class='col-12 p-2'>
+
+    <div class='row'>
+
+      <div class='col-4'>
+        <div class='mt-2'>{{number}}</div>
+        <div class='mt-3 h5'>{{status}}</div>
+      </div>
+
+      <div class='col-2'>
+        <div class='mt-2'>{{amount.title}}</div>
+        <div class='mt-3 h4'>{{amount.value}}</div>
+      </div>
+
+      <div class='col-4'>
+        {{#each images}}
+          <img src='{{this}}' alt='' class='rounded' />{{/each}}
+      </div>
+
+      <div class='col-2'>
+        {{#with button}}
+          <a href='{{link}}' class='btn btn-primary mt-4'>{{text}}</a>
+        {{/with}}
+      </div>
+
+    </div>
+
+    <div class='text-success'>
+      <hr />
+    </div>
+
+  </div>
+
+{{/each}}
