@@ -1,0 +1,241 @@
+<main>
+
+  {{!-- 1 --}}
+
+  <section class='row'>
+
+    <div class='card col-12 mb-5'>
+      <div class='nav py-2'>
+
+        {{#each navigation.links}}
+
+        <div class='nav-item'>
+          <a href='{{href}}' class='nav-link ps-1'>{{text}}</a>
+        </div>
+
+        {{/each}}
+
+        <div class='pt-2 ps-3'>Disabled</div>
+
+      </div>
+    </div>
+
+  </section>
+
+  {{!-- 2 --}}
+
+  <nav aria-label="breadcrumb" class="ms-1">
+    <ol class="breadcrumb">
+
+      {{#each breadcrumb}}
+      <li class="breadcrumb-item">
+
+        {{#if url}}
+        <a href="{{url}}" style="text-decoration: none;">{{name}}</a>
+        {{else}}
+        {{name}}
+        {{/if}}
+      </li>
+      {{/each}}
+
+    </ol>
+  </nav>
+
+  <section class='row ps-0 g-3'>
+
+    <div class='h1'>{{header}}</div>
+
+    <div class="mt-4"></div>
+
+    {{#each sortBlock}}
+
+    <div class="col-3">
+
+      <select class="form-select fs-5" id="floatingSelect" aria-label="Floating label select example">
+
+        <option selected>{{placeholder}}</option>
+
+        {{#each options}}
+        <option value="{{value}}">{{text}}</option>
+        {{/each}}
+
+      </select>
+
+    </div>
+
+    {{/each}}
+
+    </div>
+
+  </section>
+
+  {{!-- 3 --}}
+
+  <section class='row ps-0 g-2 mt-5 pe-0'>
+
+    <div class="col-4">
+
+      <div class="card">
+
+        <div class="card-body">
+
+          {{#with filterBlock}}
+
+          {{#with sellers}}
+
+          <div class="h5 pb-2">{{title}}</div>
+
+          {{#each list}}
+          <div class="form-check pb-2">
+            <input type="checkbox" class="form-check-input">
+            <label class="form-check-label">{{value}}</label>
+          </div>
+          {{/each}}
+
+          {{/with}}
+
+          <div>
+            <hr>
+          </div>
+
+          {{#with brands}}
+
+          <div class="h5 pb-2">{{title}}</div>
+
+          <input type="text" class="form-control form-control-lg" placeholder="{{input.placeholder}}">
+
+          <div class="mt-4">
+            {{#each options}}
+            <div class="form-check pb-2">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label">{{value}}</label>
+            </div>
+            {{/each}}
+          </div>
+
+          <div>
+            <hr>
+          </div>
+
+          {{/with}}
+
+          {{#with price}}
+
+          <div class="h5 pb-2">{{title}}</div>
+
+          <input type="text" class="form-control form-control-lg" placeholder="{{range.from}}">
+
+          <input type="text" class="form-control form-control-lg mt-4" placeholder="{{range.to}}">
+
+          <a href="{{button.link}}" class="btn btn-outline-secondary btn-lg mt-4">{{button.text}}</a>
+
+          {{/with}}
+
+          <div>
+            <hr>
+          </div>
+
+          {{#each filterList}}
+
+          <div class="h5 pb-2">{{title}}</div>
+
+          <div class="">
+            {{#each options}}
+            <div class="form-check pb-2">
+              <input type="checkbox" class="form-check-input">
+              <label class="form-check-label">{{value}}</label>
+            </div>
+            {{/each}}
+          </div>
+
+          {{#unless @last}}
+          <div>
+            <hr>
+          </div>
+
+          {{/unless}}
+
+          {{/each}}
+
+          {{/with}}
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-8">
+
+      <div class="row g-2">
+
+        {{> catalogitem data=goodsList}}
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  {{!-- --- --}}
+
+  {{#with service}}
+
+  <div class='card my-5 pb-1 text-center' style="background-color: #1f8351; color:#fff;">
+
+    <div class='card-body m-0 p-0 mt-3'>
+
+      <h2 class='card-haeding'>
+        {{title}}
+      </h2>
+
+      <p class='mt-4'>{{description}}</p>
+
+      {{#each buttons}}
+
+      <div class='col-12 pb-2'>
+
+        <a href='{{link}}' class='btn btn-primary'>{{text}}</a>
+
+      </div>
+
+      {{/each}}
+
+    </div>
+
+  </div>
+
+  {{/with}}
+
+  <div class="mt-5">
+    <hr>
+  </div>
+
+  <section class="row">
+
+    {{#each footer}}
+
+    <ul class='nav flex-column col-2'>
+
+      {{#each this}}
+
+      <li class='nav-item'>
+
+        <a class='nav-link  
+
+            {{#if @last}}
+              disabled
+            {{/if}}' href='{{link}}'>{{text}}</a>
+
+      </li>
+
+      {{/each}}
+
+    </ul>
+
+    {{/each}}
+
+  </section>
+
+</main>
