@@ -47,13 +47,13 @@ router.get('/', function (req, res) {
     priject: 'Resume project',
     text: 'Прикольний проєкт. Але обмаль часу впливає на якість виконання.',
     listPages: [
-      { link: 'http://localhost:3000/', text: 'home' },
-      { link: 'http://localhost:3000/shophome', text: 'shophome' },
-      { link: 'http://localhost:3000/shoporder', text: 'shoporder' },
-      { link: 'http://localhost:3000/shopcart', text: 'shopcart' },
-      { link: 'http://localhost:3000/shopprofile', text: 'shopprofile' },
-      { link: 'http://localhost:3000/shopreview', text: 'shopreview' },
-      { link: 'http://localhost:3000/shopcatalog', text: 'shopcatalog' },
+      { link: '/', text: 'home' },
+      { link: '/shophome', text: 'shophome' },
+      { link: '/shoporder', text: 'shoporder' },
+      { link: '/shopcart', text: 'shopcart' },
+      { link: '/shopprofile', text: 'shopprofile' },
+      { link: '/shopreview', text: 'shopreview' },
+      { link: '/shopcatalog', text: 'shopcatalog' },
     ],
   })
   //                  ↑↑ сюди вводимо JSON дані
